@@ -96,6 +96,11 @@ Este repositorio contiene la documentación detallada y las instrucciones paso a
 
 ---
 
+![Estado del contenedor Oracle](evidencias/01-podman-oracle.png)
+*Muestra el contenedor de Oracle en estado saludable y la ejecución de comandos.*
+
+---
+
 ### 2.2. PostgreSQL
 
 1. **Instalación e inicio del servicio:**
@@ -133,6 +138,11 @@ Este repositorio contiene la documentación detallada y las instrucciones paso a
 
 ---
 
+![Conexión exitosa a PostgreSQL](evidencias/02-conexion-postgresql.png)
+*Muestra la conexión exitosa con el usuario `pguser`.*
+
+---
+
 ### 2.3. MariaDB
 
 1. **Instalación y puesta en marcha del servicio:**
@@ -160,6 +170,11 @@ Este repositorio contiene la documentación detallada y las instrucciones paso a
    FLUSH PRIVILEGES;
    EXIT;
    ```
+
+---
+
+![Conexión exitosa a MariaDB](evidencias/03-conexion-mariadb.png)
+*Muestra la conexión exitosa con el usuario `muser`.*
 
 ---
 
@@ -280,8 +295,6 @@ Comprobación de la conexión local para cada uno de los usuarios creados:
 
 * **Primera inicialización de Oracle 23ai:** Durante el primer despliegue, el contenedor tarda un par de minutos en estar disponible. Se verificó mediante `podman logs -f cont-oracle` hasta confirmar que los servicios estaban listos antes de ejecutar `sqlplus`.
 * **Restricción de interfaces por defecto en PostgreSQL/MariaDB:** Inicialmente los motores responden solo en `127.0.0.1`. Se solucionó adaptando las directivas `listen_addresses` y `bind-address` junto con la apertura de puertos en UFW.
-
-*(Si no se presentaron problemas en tu caso, puedes indicar: "No se registraron incidencias adicionales durante el despliegue y las pruebas de conexión").*
 
 ---
 
