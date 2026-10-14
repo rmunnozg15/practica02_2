@@ -14,8 +14,6 @@ Este repositorio contiene la documentación detallada y las instrucciones paso a
 ---
 
 ## Índice
-
-## Índice
 1. [Entorno y Características del Sistema](#1-entorno-y-características-del-sistema)
 2. [Despliegue y Configuración Paso a Paso](#2-despliegue-y-configuración-paso-a-paso)
    - 2.1. [Oracle Database 23ai Free con Podman](#21-oracle-database-23ai-free-con-podman)
@@ -300,5 +298,5 @@ Las capturas de pantalla de la ejecución y verificación se encuentran almacena
 ### Fuentes Consultadas
 
 * [Documentación oficial de Oracle Database Free](https://www.oracle.com/es/database/free/get-started/)
-* Documentación oficial de PostgreSQL (`postgresql.conf` & `pg_hba.conf`)
+* Documentación oficial de PostgreSQL (`postgresql.conf` y `pg_hba.conf`)
 * Knowledge Base oficial de MariaDB sobre configuración de red y gestión de usuarios.
